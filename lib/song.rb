@@ -9,12 +9,12 @@ attr_accessor :name, :artist, :genre
 
 
   def initialize(name, artist, genre)
-  @name = name
-  @artist = artist
-  @genre = genre
-  @@count += 1
-  @genres << genre
-  @@artist << artist
+    @name = name
+    @artist = artist
+    @genre = genre
+    @@count += 1
+    @@genres << genre
+    @@artist << artist
   end
   
   def self.count
@@ -22,7 +22,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genres
-    @@genres.uniq! 
+    @@genres.uniq 
   end
 
   def self.artist
