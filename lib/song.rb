@@ -38,7 +38,7 @@ attr_accessor :name, :artist, :genre
   
   def self.artist_count
     @@artists.each do |artist|
-      @@artist_count[artist] = @@artist_count(artist)
+      @@artist_count[artist] = @@artists.count(artist)
     end
     @@artist_count
   end
